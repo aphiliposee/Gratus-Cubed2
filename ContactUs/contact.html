@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--  -->
+    <!-- makes tab image -->
+    <link rel="icon" href="Images/GratusLogo.png">
+    <!--  -->
+    <!-- css file -->
+    <link rel="stylesheet" href="contact.css">
+    <!--  -->
+    <!-- social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@600&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Contact Info</title>
+  </head>
+  <body>
+
+    <header>
+
+    <div class="topnav" id="myTopnav">
+          <a href="#" id="name">GRATUS-CUBED</a>
+          <a href="#" id="eventsbutton">EVENTS</a>
+          <a href="#" id="joinbutton">JOIN</a>
+          <a href="#" id="donatebutton">DONATE</a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+          <div class="navbar">
+            <nav>
+              <ul>
+                <li><a href="../index.html"><img src="Images/GratusLogo.png" alt=""></a></li>
+                <li><a href="../index.html" class="navbartext">Home</a></li>
+                <li><a href="../AboutUs/aboutus.html" class="navbartext">About Us</a></li>
+                <li><a href="" class="navbartext">The Issues</a></li>
+                <li><a href="../OurServices/ourservices.html" class="navbartext">Our Services</a></li>
+                <li><a href="" class="navbartext">Events</a></li>
+                <li><a href="" class="navbartext">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div class="big">
+          <div class="gradient">
+            <h1>Contact Info</h1>
+          </div>
+        </div>
+
+        <div class="Contact">
+          <p>For general inquiries or questions, email us at: <span class = "info"><a href="mailto:gratuscubed@gmail.com">gratuscubed@gmail.com</a></span></p>
+          <p>For urgent concerns, reach out to us via text at
+           <span class="info">
+            (917)-818-8189
+           </span>
+          </p>
+        </div>
+
+
+        <div class="submissionsbox">
+          <h1>Drop your questions and comments here!</h1>
+          <h2><span class="asterisk">*</span> <i>Indicates required field</i></h2>
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label class="Input">First Name <span class="asterisk"> * </span><input type="text" name="name" /></label>
+              <div class="">
+              <p>  <label class="Input">Last Name <span class="asterisk"> * </span><input type="text" name="name" /></label></p>
+              </div>
+            </p>
+            <p>
+              <label class="Input">Email <span class="asterisk"> * </span></label>
+            </p>
+            <input type="email" name="email"  class="thing"/>
+            <p>
+              <label class="Input">Phone Number</label>
+            </p>
+            <input type="tel" name="tel" class="thing"/>
+            <p>
+              <label class="Input"><span id="comment">Comment </span> </label>
+            </p>
+            <p><textarea name="message" class="Input"></textarea></p>
+            <p>
+              <button type="submit" id="submit">SUBMIT</button>
+            </p>
+          </form>
+        </div>
+
+
+        <footer>
+          <div class="footerwrapper">
+            <img src="Images/GratusLogo.png" alt="">
+            <span class="buttonswrapper">
+              <a href="#" id="join">JOIN</a>
+              <a href="#" id="donate">DONATE</a>
+            </span>
+            <div class="socialmedias">
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <div class="footernav">
+              <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">OUR CURRENT PROJECT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT INFO</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </footer>
+
+
+  </body>
+</html>

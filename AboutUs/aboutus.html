@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--  -->
+  <!-- makes tab image -->
+  <link rel="icon" href="Images/GratusLogo.png">
+  <!--  -->
+  <!-- css file -->
+  <link rel="stylesheet" href="aboutus.css">
+  <!--  -->
+  <!-- social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>About us</title>
+</head>
+  <body>
+
+    <header>
+      <div class="topnav" id="myTopnav">
+            <a href="#" id="name">GRATUS-CUBED</a>
+            <a href="#" id="eventsbutton">EVENTS</a>
+            <a href="#" id="joinbutton">JOIN</a>
+            <a href="#" id="donatebutton">DONATE</a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+
+            <div class="navbar">
+              <nav>
+                <ul>
+                  <li><a href="../index.html"><img src="Images/GratusLogo.png" alt=""></a></li>
+                  <li><a href="../index.html" class="navbartext">Home</a></li>
+                  <li><a href="../AboutUs/aboutus.html" class="navbartext">About Us</a></li>
+                  <li><a href="../TheIssues/theissues.html" class="navbartext">The Issues</a></li>
+                  <li><a href="../OurServices/ourservices.html" class="navbartext">Our Services</a></li>
+                  <li><a href="" class="navbartext">Events</a></li>
+                  <li><a href="" class="navbartext">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+
+
+          <div class="WhoWeArecontainer">
+            <div class="gradient">
+              <h1>About Us  </h1>
+            </div>
+          </div>
+
+          <div class="MTT">
+            <h1>Meet the Team!</h1>
+            <hr>
+          </div>
+
+          <div id="topcontainer">
+            <div> <img src="Images/Ada.jpg" alt=""> </div>
+            <div> <img src="Images/Jennifer.jpg" alt=""> </div>
+            <div> <img src="Images/Michelle.jpg" alt=""> </div>
+            <div> <img src="Images/Aryan.jpg" alt=""> </div>
+          </div>
+          <div id="bottomcontainer">
+            <div> <img src="Images/Naann.jpeg" alt=""> </div>
+            <div> <img src="Images/StupidGuy.jpg" alt=""> </div>
+            <div> <img src="Images/Alex.jpeg" alt=""> </div>
+          </div>
+
+
+          <div class="WWScontainer">
+            <hr id="hr1">
+            <h1>Why We Started</h1>
+            <hr id="hr2">
+            <p>With the alarming rate of homelessness in Long Island, we decided to act upon it. Gratus-Cubed was created to help others in our community while impacting people globally. The team wholeheartedly dedicates their efforts to make a change for the better and inspire people to do the same too. We hope to expand our organization to not just homelessness, but other areas such as environmental conservation, medical fundraisers, and more.</p>
+          </div>
+
+
+            <div class="slideshow">
+              <div class="w3-content w3-display-container">
+                <img class="mySlides" src="Images/test.jpg" style="width:100%; height: 54.8vh;">
+                <img class="mySlides" src="Images/test2.jpg" style="width:100%; height: 54.8vh;">
+                <img class="mySlides" src="Images/test3.jpg" style="width:100%; height: 54.8vh;">
+
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+              </div>
+
+              <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                x[slideIndex-1].style.display = "block";
+              }
+              </script>
+            </div>
+
+
+            <footer>
+              <div class="footerwrapper">
+                <img src="Images/GratusLogo.png" alt="">
+                <span class="buttonswrapper">
+                  <a href="#" id="join">JOIN</a>
+                  <a href="#" id="donate">DONATE</a>
+                </span>
+                <div class="socialmedias">
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+                </div>
+                <div class="footernav">
+                  <ul>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">OUR CURRENT PROJECT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT INFO</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </footer>
+
+
+  </body>
+</html>

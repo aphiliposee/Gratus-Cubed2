@@ -4,141 +4,104 @@ html, body {
   /* gets rid of margin */
   margin: 0;
   padding: 0;
-
+  overflow-x: hidden !important;
 }
 
-.topbar {
-  position: fixed;
-  width: 100%;
-  height: 4vh;
+
+
+
+
+
+
+.topnav {
+  overflow: hidden;
   background-color: #54b997;
 }
 
-.topbar h1 {
-  /* gets rid of whitespace at top */
-  margin: 0;
-  /*  */
-  font-size: 1.5vw;
-  color: white;
-  font-family: Verdana, sans-serif;
-  position: relative;
-  left: 31%;
-}
-
-/* EVENTS, JOIN, DONATE */
-.buttons a {
-  display: inline-table;
-  
-  color: white;
-  padding: 1vh .9vw;
-  background-color: #4CAF50;
-  position: fixed;
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
-  font-size: 1.7vh;
+  padding: 14px 16px;
   text-decoration: none;
-  top: 0;
+  font-size: 17px;
 }
 
-.buttons a:hover {
-  cursor: grab;
-  color: black;
+.topnav a:hover {
+  transition: 0.3s;
   background-color: white;
-  transition: .3s;
+  color: black;
 }
 
-.buttons #eventsbutton {
-  position: absolute;
-  left: 43%;
-}
-
-.buttons #joinbutton {
-  position: absolute;
-  left: 48.5%;
-}
-
-.buttons #donatebutton {
-  position: absolute;
-  left: 52.4%;
-}
-
-/*  */
-/*  */
-/*  */
-/*  */
-/* SOCIAL  MEDIA BUTTONS */
-
-.socialbuttons {
-  float:left;
-  position: fixed;
-  top:.09vh;
-  left: 58%;
-  font-size: 2vh;
-  margin-left: 0;
-   display: inline-table;
-}
-
-
-.fa {
-  display: inline-block;
-  width: 2.5vw;
-  height: 2vh;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  text-decoration: none;
-  text-align: center;
-  margin:0;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-
-.fa-instagram {
-  background: #125688;
+.topnav a.active {
+  background-color: #4CAF50;
   color: white;
-
 }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-  position: relative;
-  right: .25vw;
+.topnav .icon {
+  display: none;
 }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-  position: relative;
-  right: 5.35%;
+#name {
+  font-weight: bold;
+  margin-left: 35vw;
 }
 
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-  position: relative;
-  right: 8%;
+#name:hover  {
+  background-color: #54b997;
+}
+
+#joinbutton {
+  font-size: 1em;
 }
 
 
-/* navbar */
 
-.navbar{
+
+/* NAVBAR */
+
+.navbar li{
+  list-style-type: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 975px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .fa-instagram, .fa-facebook, .fa-twitter, .fa-youtube {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+
+.navbar {
+  margin: 0 auto;
   width: 100%;
-  height: 250vh;
-  background-color: black;
 }
-
-.navbar img {
-  position: fixed;
-  top: 5.5vh;
-  left: 20%;
-  width: 5%;
-  height: auto;
-}
-
-
 
 nav {
   z-index: 1;
@@ -146,10 +109,8 @@ nav {
 
 
 nav ul {
-  position: fixed;
-  top: 9vh;
-  left: 28%;
-  float: left;
+  position: relative;
+  left: 23vw;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -159,33 +120,712 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-right: 2.5vh;
-  font-size: 1.5vh;
+  margin-left: 25px;
+  padding-top: 15px;
+
 }
 
 nav a {
   color: #2b6054;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 170%;
+  font-size: 22px;
 }
 
 nav a:hover {
   color: #000;
 }
 
-nav a::before {
-	content: '';
-	display: block;
-	height: .35vh;
-	background-color: #54b997;
+nav .navbartext::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #54b997;
 
-	position: absolute;
-  bottom: 0;
-  width:0%;
-	transition: all ease-in-out 250ms;
+    position: relative;
+    top: 40px;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
 }
 
-nav a:hover::before {
-  width: 8%;
+nav .navbartext:hover::before {
+  width: 100%;
+}
+
+.navbartext {
+  position: relative;
+  top: 1vh;
+}
+
+
+@media screen and (max-width: 1400px){
+  .navbar {
+    position: relative;
+    right: 5vw;
+  }
+}
+
+@media screen and (max-width: 1260px){
+  .navbar {
+    position: relative;
+    right: 10vw;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 1150px){
+  .navbar {
+    position: relative;
+    right: 14vw;
+  }
+  .navbar img {
+    display: block;
+    position: relative;
+    left:35vw;
+  }
+  .navbartext {
+    position: relative;
+    top: 40px;
+    right:6vw;
+  }
+  .slideshow-container {
+    margin-top: 5%;
+  }
+}
+
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0; }
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5em;
+  transition: 0.6s ease;
+  border-radius: 25px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: relative;
+  bottom: 35vh;
+  left: 80%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  position: relative;
+  bottom: 35vh;
+  left: 13.5%;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  top: 5em;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  bottom: 5vh;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+
+
+/* MISSION CONTAINER */
+
+.missioncontainer {
+  width: 75%;
+  height:40vh;
+  margin: auto;
+
+  position: relative;
+  background-color: #099e7f;
+  color: rgb(228, 235, 225);
+  padding-left: 5em;
+}
+
+.missioncontainer h1 {
+  font-size: 5vh;
+  font-weight: 900;
+  padding-top: 2.5%;
+  position: relative;
+  right: 3%;
+}
+
+.missioncontainer h3 {
+  font-size: 3vh;
+  font-weight: 900;
+  position: relative;
+  top: -5%;
+  right: 3%;
+
+}
+
+.missioncontainer p {
+  max-width: 45%;
+  font-size: 1.85vh;
+  position: relative;
+  top: -5%;
+  right: 3%;
+}
+
+
+.missioncontainer img {
+  position: absolute;
+  right: 0;
+}
+
+
+#learnmorelink {
+  position: absolute;
+  bottom: 2%;
+  left: 62%;
+  text-decoration: none;
+  width: 65%;
+}
+
+#learnmore {
+  border-style: solid;
+  border-color: white;
+  padding: 1% 5%;
+  color: white;
+}
+
+
+.recruitment {
+  width: 100%;
+  height: 43vh;
+  position: relative;
+  top: 8vh;
+}
+
+#filloutlink {
+  position: absolute;
+  text-decoration: none;
+  left: 30%;
+  bottom: 0;
+}
+
+#fillout {
+  width: 17%;
+  display: inline-block;
+  position: relative;
+  right: 27%;
+  bottom: 2em;
+  padding: 10px 20px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #2b6054;
+  display: inline;
+  font-size: 1.5em;
+  font-weight: medium;
+  color: #2b6054;
+  letter-spacing: normal;
+}
+
+#fillout:hover {
+  color: white;
+  background-color: #2b6054;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides2 {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container2 {
+  position: relative;
+  top: 8%;
+  margin: auto;
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  background-color: white;
+  z-index: -1;
+}
+
+
+.slideshow-container2 img {
+  position: relative;
+  top: 7.5vh;
+  left: 13%;
+  z-index: -1;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot2 {
+  position: absolute
+  display: none;
+}
+
+.active2 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade2 {
+  -webkit-animation-name: fade2;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade2;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.currentprojectbox {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 38%;
+  height: 70%;
+  background-color: #54b997;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.currentprojectbox h1 {
+  color: white;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.currentprojectbox h2 {
+  color: white;
+  margin-left: 5%;
+  max-width: 80%;
+  font-size: 2.7vw;
+}
+
+.currentprojectbox a {
+  font-size: 1vw;
+  color: white;
+  margin-left: 5%;
+  position: absolute;
+  bottom: 6vh;
+}
+
+.services {
+  background-color: black;
+  width: 100%;
+  height:85%;
+  position: relative;
+  top: 5vh;
+}
+
+.textboxes {
+  background-color: #aff0c1;
+  width: 43%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+
+}
+
+
+.textboxes h1 {
+  position: relative;
+  font-size: 4.5em;
+  color: white;
+  top: 10%;
+  margin-bottom: 15%;
+  margin-left: 40%;
+}
+
+.textboxes p {
+  color: white;
+  margin-left: 40%;
+  max-width: 40em;
+  font-size: 1.35em;
+}
+
+
+
+
+
+
+.serviceboxes {
+  background-color: #aff0c1;
+  width: 57%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+}
+
+
+.service1 {
+  background-color: #54b997;
+  width: 77%;
+  height: 24%;
+  margin-top: 8%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+}
+
+.service2 {
+  background-color: #54b997;
+  width: 77%;
+  height: 24%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+}
+
+.service3 {
+  background-color: #54b997;
+  width: 77%;
+  height: 24%;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+.service1 h1, .service2 h1, .service3 h1{
+  display: inline;
+  position: absolute;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+
+.service1 p, .service2 p, .service3 p {
+  position: relative;
+  bottom: 12vh;
+  right: 20vw;
+  float: right;
+}
+
+
+.seemore {
+  position: relative;
+  top: 5vh;
+  width: 100%;
+  height: 15%;
+  background-color: #54b997;
+  text-align: center;
+
+}
+
+#seemorelink {
+  position: relative;
+  top: 5vh;
+  padding: 20px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #2b6054;
+  font-size: 1em;
+  font-weight: medium;
+  color: #2b6054;
+  letter-spacing: normal;
+  text-align:center;
+  font-family: 'Maven Pro', sans-serif;
+  text-decoration: none;
+}
+
+
+#seemorelink:hover {
+  color: white;
+  background-color: #2b6054;
+  transition: 0.3s;
+}
+
+
+
+
+.witi {
+  background-color: #2b6054;
+  width: 100%;
+  height: 70%;
+  position: relative;
+  top: 3vh;
+}
+
+.witi h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 4em;
+  font-weight: 500;
+  position: relative;
+  top: 7%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.witi p {
+  color: white;
+  position: relative;
+  top: 12%;
+  font-weight:normal;
+  max-width: 50em;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Muli', sans-serif;
+  line-height: 32px;
+}
+
+
+#moreabout {
+
+  width: 25%;
+  padding: 10px 20px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #38d1af;
+  font-size: 1.4em;
+  font-weight: medium;
+
+  color: white;
+
+}
+
+#moreaboutlink {
+  text-decoration: none;
+  position: relative;
+  top: 17vh;
+}
+
+#moreabout:hover {
+  background-color: white;
+  color: #2b6054;
+  transition: 0.3s;
+}
+
+footer {
+  width: 100%;
+  height: 18%;
+  background-color: #54b997;
+  position: relative;
+  top: 1vh;
+}
+
+.footernav {
+  width: 25%;
+  height: 100%;
+  /* background-color: grey; */
+  position: relative;
+  left:4%;
+  bottom: 15%;
+  float: right;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer .footernav a {
+  position: relative;
+  margin-left: 3vw;
+  top: 1vh;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: white;
+}
+
+footer .footernav a:hover{
+  text-decoration: none;
+  font-size: 1.75em;
+  transition: 0.3s;
+}
+
+footer .buttonswrapper {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  top: 3vh;
+  right: 38%;
+  /* background-color: red; */
+  float: right;
+}
+
+.buttonswrapper a {
+  text-decoration: none;
+  color: white;
+  border-style: solid;
+  border-width: medium;
+  font-size: 1.5em;
+  padding: 15px 35px;
+  position: relative;
+  right: 10%;
+}
+
+
+.buttonswrapper a:hover {
+  background-color: white;
+  border-color: #54b997;
+  color: #54b997;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+ #join {
+  margin-left: 22%;
+
+}
+
+ #donate {
+  margin-left: 5%;
+
+}
+
+
+
+.socialmedias {
+  width: 23%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left:37%;
+  /* background-color: purple; */
+}
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.socialmedias .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 18%;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 1%;
+    margin-right: 1%;
+    position: relative;
+    left: 10%;
+  }
+
+.socialmedias  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.socialmedias  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+.socialmedias  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+.socialmedias  .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+footer img {
+  width: 10em;
+  height: 10em;
+  position: relative;
+  margin-top: 1%;
+  left: 28%;
 }
