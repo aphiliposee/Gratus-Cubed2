@@ -185,8 +185,8 @@ nav .navbartext:hover::before {
   }
   .navbartext {
     position: relative;
-    top: 40px;
-    right:6vw;
+    top: 10px;
+    right:0vw;
     font-size: 1.25em;
   }
 
