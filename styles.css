@@ -47,7 +47,6 @@ html, body {
 }
 
 #joinbutton {
-  font-size: 1em;
 }
 
 
@@ -215,6 +214,10 @@ nav .navbartext:hover::before {
   background-color: #099e7f;
   color: rgb(228, 235, 225);
   padding-left: 5em;
+}
+
+.missioncontainer img {
+   height: 40vh;
 }
 
 .missioncontainer h1 {
@@ -419,6 +422,12 @@ body {font-family: Verdana, sans-serif;}
 .mySlides2 {display: none;}
 img {vertical-align: middle;}
 
+
+.mySlides img{
+  width:  100%;
+  height: 65vh;
+}
+
 /* Slideshow container */
 .slideshow-container2 {
   position: relative;
@@ -439,6 +448,11 @@ img {vertical-align: middle;}
   z-index: -1;
 }
 
+.mySlides2 img {
+   height: 50vh;
+   width:50%;
+
+}
 
 
 /* The dots/bullets/indicators */
@@ -557,6 +571,10 @@ img {vertical-align: middle;}
 	position: relative;
     left: 40%;
     bottom: 13vh;
+}
+
+.w3-display-container {
+
 }
 
 @media screen and (max-width: 1550px) {
@@ -969,4 +987,541 @@ footer img {
     padding: 10px;
 
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOR MOBILE */
+
+@media screen and (max-width: 425px) {
+
+
+
+
+  #eventsbutton, #donatebutton, #joinbutton {
+    font-size: 11px;
+  }
+  #name {
+    position: relative;
+    right: 10%;
+  }
+  .navbar nav a {
+    font-size: 7px;
+
+  }
+  .navbar img {
+    position: absolute;
+    left: 98%;
+    margin-top: 2%;
+    width: 42px;
+    height: 42px;
+  }
+  nav ul {
+    position: relative;
+    left: 0vw;
+
+  }
+  nav li {
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    bottom: 10px;
+    left: 11vw;
+  }
+
+  .mySlides img{
+    width:  100%;
+    height: 40vh;
+  }
+
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 22vh;
+    color: white;
+    padding: 1vh 1.5vw;
+    background-color: grey;
+    position: fixed;
+    font-weight: bold;
+    font-size: 1em;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    position: relative;
+    left: 80%;
+  }
+
+  .prev {
+    position: relative;
+    left: 9%;
+  }
+
+
+  .dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+  }
+
+
+  .missioncontainer {
+    height: 25vh;
+    width: 95%;
+    padding-left: 1.5em;
+  }
+
+  .missioncontainer img {
+    height: 25vh
+  }
+
+  .missioncontainer h1 {
+    font-size: 1.2em;
+
+  }
+
+  .missioncontainer h3 {
+    font-size: 1em;
+  }
+
+  .missioncontainer p {
+    font-size: .4em;
+
+  }
+
+
+  #learnmorelink {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+    text-decoration: none;
+    width: 75%;
+    font-size: 14px;
+  }
+
+  #learnmore {
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 1% 3%;
+    color: white;
+  }
+
+
+
+  .recruitment {
+      width: 100%;
+      height: 13vh;
+      position: relative;
+  }
+
+
+  #filloutlink {
+    position: absolute;
+    text-decoration: none;
+    left: 25%;
+    bottom: 0;
+  }
+
+  #fillout {
+    width: 17%;
+    display: inline-block;
+    position: relative;
+    right: 25%;
+    bottom: 1.5em;
+    padding: 5px 10px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #2b6054;
+    display: inline;
+    font-size: .5em;
+    font-weight: medium;
+    color: #2b6054;
+    letter-spacing: normal;
+  }
+
+
+  /* Slideshow container */
+  .slideshow-container2 {
+    position: relative;
+    top: 8%;
+    margin: auto;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+  }
+
+
+  .slideshow-container2 img {
+    position: relative;
+    top: 7.5vh;
+    left: 3%;
+    z-index: -1;
+  }
+
+
+  .mySlides2 img {
+    height: 22vh;
+    width:70%;
+  }
+
+  .currentprojectbox {
+    position: absolute;
+    top: 22%;
+    right: 3%;
+    width: 42%;
+    height: 20vh;
+    background-color: #54b997;
+    z-index: 2;
+    opacity: 0.9;
+  }
+
+  .currentprojectbox h1 {
+    color: white;
+    font-weight: bold;
+    margin-left: 5%;
+    font-size: .5em;
+  }
+
+  .currentprojectbox h2 {
+    color: white;
+    margin-left: 5%;
+    max-width: 80%;
+    font-size: .75em;
+  }
+
+  .currentprojectbox a {
+    font-size: .5em;
+    color: white;
+    margin-left: 16%;
+    position: absolute;
+    bottom: 2vh;
+    text-decoration: none;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 5px 15px;
+  }
+
+
+  .services {
+      background-color: black;
+      width: 100%;
+      height:30vh;
+      position: relative;
+      top: 6vh;
+  }
+
+  .textboxes h1  {
+    position: relative;
+    top: 6%;
+    font-size: 1.25em;
+    margin-left: 18%;
+
+  }
+
+  .textboxes p{
+    color: white;
+    font-size: .5em;
+    margin-left: 18%;
+
+  }
+
+  .w3-display-container {
+    margin-right: 25%;
+  }
+
+  .w3-display-container img {
+
+  }
+
+
+
+  .serviceboxes h1 {
+    font-size: .75em;
+  }
+
+  .serviceboxes p {
+    font-size: .5em;
+  }
+
+
+  .service1 {
+  background-color: #54b997;
+  width: 90%;
+  height: 24%;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  margin-left: 6%;
+}
+
+.service2 {
+  background-color: #54b997;
+  width: 90%;
+  height: 24%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 6%;
+}
+
+.service3 {
+  background-color: #54b997;
+  width: 90%;
+  height: 24%;
+  margin-top: 3%;
+  margin-left: 6%;
+}
+
+.w3-display-right {
+  display: none;
+
+}
+
+.w3-display-left {
+display: none;
+}
+
+
+
+.w3-display-container {
+  display: none;
+}
+
+
+
+
+
+
+.service1 h1, .service2 h1, .service3 h1{
+  display: inline;
+  position: absolute;
+  margin-left: 2vw;
+  margin-top: 1vh;
+}
+
+.service1 p, .service2 p, .service3 p {
+  position: relative;
+  bottom: 4vh;
+  right: 20vw;
+  float: right;
+}
+
+.seemore {
+  position: relative;
+  top: 4vh;
+  width: 100%;
+  height: 10%;
+  background-color: #54b997;
+  text-align: center;
+}
+
+
+#seemorelink {
+  position: relative;
+  top: 4vh;
+  padding: 10px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #2b6054;
+  font-size: .65em;
+  font-weight: medium;
+  color: #2b6054;
+  letter-spacing: normal;
+  text-align:center;
+  font-family: 'Maven Pro', sans-serif;
+  text-decoration: none;
+}
+
+
+.witi {
+  background-color: #2b6054;
+  width: 100%;
+  height: 55vh;
+  position: relative;
+  top: 4vh;
+  margin-bottom: 0;
+
+}
+
+.witi h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 500;
+  position: relative;
+  top: 7%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.witi p {
+  color: white;
+  position: relative;
+  top: 12%;
+  font-weight:normal;
+  max-width: 28em;
+  font-size: 13px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Muli', sans-serif;
+  line-height: 16px;
+}
+
+
+#moreabout {
+
+  width: 50%;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #38d1af;
+  font-size: .4em;
+  font-weight: medium;
+  color: white;
+  position: relative;
+  bottom: 5vh;
+}
+
+#moreaboutlink {
+  text-decoration: none;
+}
+
+
+footer {
+  width: 100%;
+  height: 19%;
+  background-color: #54b997;
+  position: relative;
+
+}
+
+footer img {
+  width: 3em;
+  height: 3em;
+  position: relative;
+}
+
+.footernav {
+  width: 35%;
+  height: 100%;
+  /* background-color: grey; */
+  position: absolute;
+  left:54%;
+  display: inline-block;
+  /* opacity: .9; */
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer .footernav a {
+  position: relative;
+  text-decoration: none;
+  font-size: .5em;
+  font-weight: 500;
+  color: white;
+}
+
+footer .footernav a:hover{
+  text-decoration: none;
+  font-size: .75em;
+  transition: 0.3s;
+}
+
+footer .buttonswrapper {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  right: 38%;
+  /* background-color: red; */
+  float: right;
+}
+
+.buttonswrapper a {
+  text-decoration: none;
+  color: white;
+  border-style: solid;
+  border-width: medium;
+  font-size: 1em;
+  padding: 5px 20px;
+  position: relative;
+  top: 3vh;
+  right: 10%;
+}
+
+
+.buttonswrapper a:hover {
+  background-color: white;
+  border-color: #54b997;
+  color: #54b997;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+ #join {
+  margin-left: 22%;
+  margin-right: 5%;
+
+}
+
+
+
+.socialmedias {
+  width: 23%;
+  height: 50%;
+  position: absolute;
+
+  background-color: purple;
+}
+
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.socialmedias .fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 18%;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 1%;
+    margin-right: 1%;
+    position: relative;
+    left: 10%;
+  }
+
+
+
 }

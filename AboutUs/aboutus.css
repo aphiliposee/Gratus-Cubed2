@@ -303,6 +303,16 @@ nav .navbartext:hover::before {
 
 
 
+.partwrapper {
+  position: absolute;
+  display: none;
+}
+
+.part, .part p, .part a {
+
+}
+
+
 .WWScontainer {
   margin-top: 8%;
   width: 100%;
@@ -349,7 +359,9 @@ height: 3px;
 
 
 
+.slideshow {
 
+}
 
 
 .mySlides {
@@ -359,8 +371,18 @@ height: 3px;
 }
 
 
+.w3-display-left {
+
+}
+
+.w3-display-right {
+
+}
 
 
+.slideshow img {
+  height: 54.8vh;
+}
 
 
 
@@ -586,4 +608,380 @@ footer img {
     padding: 10px;
 
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 425px) {
+
+
+
+
+  #eventsbutton, #donatebutton, #joinbutton {
+    font-size: 11px;
+  }
+  #name {
+    position: relative;
+    right: 10%;
+  }
+  .navbar nav a {
+    font-size: 7px;
+
+  }
+  .navbar img {
+    position: absolute;
+    left: 98%;
+    margin-top: 2%;
+    width: 42px;
+    height: 42px;
+  }
+  nav ul {
+    position: relative;
+    left: 0vw;
+
+  }
+  nav li {
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    bottom: 40px;
+    left: 20vw;
+  }
+
+  .WhoWeArecontainer {
+    height: 25%;
+  }
+
+  .WhoWeArecontainer h1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 14%;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .gradient {
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#54b997, white); /* Standard syntax (must be last) */
+    height: 60%;
+  }
+
+
+  .MTT {
+    height: 35%;
+    width: 100%;
+  }
+
+  .MTT h1 {
+    font-size: 2em;
+    color: #54b997;
+    /* text-decoration: underline; */
+    text-align: center;
+    position: relative;
+  }
+
+  .MTT hr {
+    position: relative;
+    top: .5em;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    height: 1px;
+  }
+
+  #topcontainer {
+    margin: auto;
+    text-align: justify;
+    width: 95%;
+    height: 55%;
+    margin-bottom: 1vh;
+    position: relative;
+    bottom: 15%;
+  }
+
+  #bottomcontainer {
+    margin: auto;
+    text-align: justify;
+    width:75%;
+    height: 25vh;
+    position: relative;
+    bottom: 35%;
+  }
+  #topcontainer div {
+    width: 22vw; /* Declare your value. Can be in relative units. */
+    height: 25vh;
+    background-color: #54b997;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 2%;
+  }
+
+  #bottomcontainer div {
+    width: 22vw; /* Declare your value. Can be in relative units. */
+    height: 100%;
+    background-color: #54b997;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 2%;
+    }
+  #topcontainer:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+
+  #bottomcontainer:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+  #topcontainer img, #bottomcontainer img {
+    width: 58%;
+    height: 6vh;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    left: 21%;
+    bottom: 11%;
+  }
+
+
+
+
+  .partwrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 5%;
+  }
+
+
+
+  .part {
+    display: block;
+    position: absolute;
+    bottom: 7vh;
+    width: 100%;
+    height: 25vh;
+    background-color: #54b997;
+  }
+
+  .part p {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .part a {
+    width: 45%;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding: 5px 10px;
+    margin-top: 5%;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+  }
+
+
+
+
+
+
+  .WWScontainer {
+    width: 100%;
+    height: 60%;
+    position: relative;
+  }
+
+  .WWScontainer h1 {
+    text-align: center;
+    font-size: 2.25em;
+    color: #54b997;
+  }
+
+  #hr1 {
+    margin-bottom: 2%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    height: 1px;
+  }
+
+
+  #hr2{
+    margin-top: 2%;
+
+  width: 28%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: gray;
+  height: 1px;
+  }
+
+
+
+  .WWScontainer p {
+    padding-top: 3%;
+    font-size: 1em;
+    color: black;
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+    line-height: 27px;
+  }
+
+
+
+  .slideshow {
+    position: relative;
+    height: 54vh;
+  }
+
+  .mySlides {
+    display: none;
+
+  }
+
+  .slideshow img {
+    height: 54vh;
+    position: relative;
+    top: 1vh;
+  }
+
+
+  footer {
+    width: 100%;
+    height: 19%;
+    background-color: #54b997;
+
+  }
+
+  footer img {
+    width: 3em;
+    height: 3em;
+    position: relative;
+  }
+
+  .footernav {
+    width: 35%;
+    height: 100%;
+    /* background-color: grey; */
+    position: absolute;
+    left:54%;
+    display: inline-block;
+    /* opacity: .9; */
+  }
+
+  footer li {
+    list-style-type: none;
+  }
+
+  footer .footernav a {
+    position: relative;
+    text-decoration: none;
+    font-size: .5em;
+    font-weight: 500;
+    color: white;
+  }
+
+  footer .footernav a:hover{
+    text-decoration: none;
+    font-size: .75em;
+    transition: 0.3s;
+  }
+
+  footer .buttonswrapper {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    right: 38%;
+    /* background-color: red; */
+    float: right;
+  }
+
+  .buttonswrapper a {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-width: medium;
+    font-size: 1em;
+    padding: 5px 20px;
+    position: relative;
+    top: 3vh;
+    right: 10%;
+  }
+
+
+  .buttonswrapper a:hover {
+    background-color: white;
+    border-color: #54b997;
+    color: #54b997;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+   #join {
+    margin-left: 22%;
+    margin-right: 5%;
+
+  }
+
+
+
+  .socialmedias {
+    width: 23%;
+    height: 50%;
+    position: absolute;
+
+    background-color: purple;
+  }
+
+
+
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .socialmedias .fa {
+      padding: 10px;
+      font-size: 15px;
+      width: 18%;
+      text-align: center;
+      text-decoration: none;
+      margin-left: 1%;
+      margin-right: 1%;
+      position: relative;
+      left: 10%;
+    }
+
+
+
+
+
+
+
 }
